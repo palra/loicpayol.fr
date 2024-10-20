@@ -34,10 +34,10 @@
 	<div
 		class="mx-auto px-4 max-w-screen-xl flex flex-col md:min-h-[60dvh] items-stretch justify-center"
 	>
-		<h2 class="text-3xl md:text-4xl lg:text-5xl text-center md:text-start mb-2">
+		<h2 class="text-4xl lg:text-5xl text-center md:text-start mb-2">
 			It all starts with a <nobr><Pen /> & <Paper /></nobr>
 		</h2>
-		<div class="max-w-prose text-xl space-y-2 text-justify md:text-start">
+		<div class="max-w-prose text-lg sm:text-xl space-y-2 text-justify md:text-start">
 			<p>
 				Away from screens and pixels, I find the clearest path to bringing thoughts to life. Here, I
 				can shape ideas freely – bending, erasing, and redrawing them in the endless space of
@@ -49,7 +49,7 @@
 				drive. Hand in hand, we can turn bold ideas into reality, change the world for the better, teach
 				others, and give back to our communities.
 			</p>
-			<p class="font-normal text-2xl pt-2">
+			<p class="font-normal text-xl sm:text-2xl pt-2">
 				Together, we can turn visionary ideas into groundbreaking realities.
 			</p>
 		</div>
@@ -58,8 +58,8 @@
 	<div
 		class="mx-auto px-4 max-w-screen-xl flex flex-col gap-8 min-h-[60dvh] items-center justify-center"
 	>
-		<h2 class="text-3xl md:text-4xl lg:text-5xl mb-2 lg:self-end">How may I help you?</h2>
-		<div class="flex flex-wrap justify-center gap-8 text-center">
+		<h2 class="text-4xl lg:text-5xl mb-2 lg:self-end">How may I help you?</h2>
+		<div class="flex flex-col md:flex-row flex-wrap justify-center gap-8 text-center">
 			<div class="flex flex-col gap-2 service">
 				<h3>Full-stack Development</h3>
 				<p>
@@ -138,10 +138,10 @@
 
 <style>
 	.service {
-		@apply max-w-96 shrink grow basis-80 lg:basis-60;
+		@apply md:max-w-96 shrink grow basis-80 lg:basis-60;
 
 		& > h3 {
-			@apply text-4xl w-4/5 mx-auto pb-8 relative max-w-96;
+			@apply text-3xl md:text-4xl w-4/5 mx-auto pb-8 relative max-w-60 md:max-w-72;
 
 			&::after {
 				content: url('/scribble.svg');
@@ -150,7 +150,7 @@
 		}
 
 		> p {
-			@apply text-lg text-justify;
+			@apply text-lg;
 		}
 	}
 </style>
