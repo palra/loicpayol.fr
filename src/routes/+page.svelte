@@ -90,8 +90,8 @@
 					clear communication across diverse teams. My experience encompasses
 					<strong>leading recruitment</strong>, <strong>managing cross-functional teams</strong>,
 					and driving <strong>key technical and business decisions</strong>. With a product-first
-					approach, I focus the big picture, streamlining daily interactions to emphasize what truly
-					matters:
+					approach, I focus on the big picture, streamlining daily interactions to emphasize what
+					truly matters:
 					<strong>people, product, and core values</strong>, ensuring efficient and purposeful
 					organizational growth.
 				</p>
