@@ -1,6 +1,6 @@
 <script>
 	//import { quintOut } from 'svelte/easing';
-	//import { fade, draw, fly } from 'svelte/transition';
+	//import { draw, fade } from 'svelte/transition';
 </script>
 
 <svg
