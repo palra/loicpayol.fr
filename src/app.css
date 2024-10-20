@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 html {
-	@apply bg-swiss-coffee-200 font-sans;
+	@apply bg-swiss-coffee-200 font-sans font-light;
+}
+
+strong {
+	@apply font-normal;
 }
 
 h1,
