@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class="w-full relative pb-16 px-8 pt-8 bg-[url('/background.svg')] bg-no-repeat bg-bottom mb-24 md:mb-0"
+	class="w-full relative pb-48 md:pb-16 px-8 pt-8 bg-[url('/background.svg')] bg-no-repeat bg-bottom"
 >
 	<div class="flex flex-col gap-8 w-full max-w-screen-xl mx-auto justify-stretch items-stretch">
 		<div class="flex flex-col justify-center md:min-h-96">
@@ -32,7 +32,7 @@
 
 <div class="space-y-24 mt-4">
 	<div
-		class="mx-auto px-4 max-w-screen-xl flex flex-col min-h-[60dvh] items-stretch justify-center"
+		class="mx-auto px-4 max-w-screen-xl flex flex-col md:min-h-[60dvh] items-stretch justify-center"
 	>
 		<h2 class="text-3xl md:text-4xl lg:text-5xl text-center md:text-start mb-2">
 			It all starts with a <nobr><Pen /> & <Paper /></nobr>
