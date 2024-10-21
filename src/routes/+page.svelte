@@ -6,21 +6,26 @@
 
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
+	import FaTelegram from 'svelte-icons/fa/FaTelegram.svelte';
 	import TransformativeTechnologies from '$lib/svg-text/transformative-technologies.svelte';
 	import EmpoweringPeople from '$lib/svg-text/empowering-people.svelte';
+
+	import Background from '$lib/assets/background.svg';
+	import Scribble from '$lib/assets/scribble.svg';
 </script>
 
 <div
-	class="w-full relative pb-48 md:pb-16 px-8 pt-8 bg-[url('/background.svg')] bg-no-repeat bg-bottom"
+	style="background-image: url('{Background}'); /* Svelte interpolation not working with Tailwindcss */"
+	class="w-full relative pb-48 md:pb-16 px-8 pt-8 bg-no-repeat bg-bottom"
 >
 	<div class="flex flex-col gap-8 w-full max-w-screen-xl mx-auto justify-stretch items-stretch">
 		<div class="flex flex-col justify-center md:min-h-96">
 			<div class="hidden md:block -mx-6">
 				<HeadlineFull class="w-full" />
 			</div>
-			<div class="md:hidden -mx-6">
+			<div class="md:hidden -mx-6 mt-16 md:mt-0">
 				<TransformativeTechnologies class="w-full" />
-				<EmpoweringPeople class="w-3/4 ml-auto -mt-16" />
+				<EmpoweringPeople class="w-3/4 mx-auto -mt-16" />
 			</div>
 		</div>
 		<div class="flex self-center md:self-end md:text-right flex-col gap-1 md:gap-3">
@@ -59,7 +64,10 @@
 		class="mx-auto px-4 max-w-screen-xl flex flex-col gap-8 min-h-[60dvh] items-center justify-center"
 	>
 		<h2 class="text-4xl lg:text-5xl mb-2 lg:self-end">How may I help you?</h2>
-		<div class="flex flex-col md:flex-row flex-wrap justify-center gap-8 text-center">
+		<div
+			class="flex flex-col md:flex-row flex-wrap justify-center gap-8 text-center"
+			style="--bg: url('{Scribble}')"
+		>
 			<div class="flex flex-col gap-2 service">
 				<h3>Full-stack Development</h3>
 				<p>
@@ -107,30 +115,41 @@
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	width="100%"
-	height="160"
-	class="bg-transparent text-brand-700 mt-16 lg:mt-48"
+	class="bg-transparent text-brand-700 mt-16 lg:mt-48 h-20 lg:h-40"
+	role="separator"
+	aria-orientation="horizontal"
+	aria-hidden="true"
 >
 	<path d="M 0 100 V 40 L 100 100"></path>
 	<path d="M 100 100 V 0 L 0 100" opacity="0.5"></path>
 </svg>
 
-<div class="flex min-h-screen bg-brand-700 py-24 px-16 items-center justify-center">
-	<div class="w-full max-w-screen-xl lg:w-2/3 mx-auto space-y-16">
+<div class="flex lg:min-h-screen bg-brand-700 py-24 px-16 items-center justify-center">
+	<div class="w-full max-w-screen-xl md:w-4/5 lg:w-2/3 mx-auto space-y-16">
 		<LetsGetInTouch class="mx-auto drop-shadow" />
 		<div
-			class="flex items-center gap-8 md:gap-12 lg:gap-16 text-swiss-coffee-200 w-4/5 max-h-80 justify-center mx-auto"
+			class="flex items-center gap-8 md:gap-12 lg:gap-16 text-swiss-coffee-200 w-4/5 max-w-screen-lg justify-center mx-auto"
 		>
 			<a
 				href="https://www.linkedin.com/in/loic-payol/"
-				class="hover:text-swiss-coffee-300 hover:rotate-3 hover:scale-110 transition-all"
+				class="hover:text-swiss-coffee-300 hover:-rotate-3 hover:scale-110 transition-all relative"
+				aria-label="Loïc Payol's LinkedIn profile"
 			>
 				<FaLinkedin />
 			</a>
 			<a
 				href="https://github.com/palra"
 				class="hover:text-swiss-coffee-300 hover:-rotate-3 hover:scale-110 transition-all"
+				aria-label="Loïc Payol's GitHub profile"
 			>
 				<FaGithub />
+			</a>
+			<a
+				href="https://t.me/LoicPayol"
+				class="hover:text-swiss-coffee-300 hover:-rotate-3 hover:scale-110 transition-all"
+				aria-label="Loïc Payol's Telegram profile"
+			>
+				<FaTelegram />
 			</a>
 		</div>
 	</div>
@@ -144,7 +163,7 @@
 			@apply text-3xl md:text-4xl w-4/5 mx-auto pb-8 relative max-w-60 md:max-w-72;
 
 			&::after {
-				content: url('/scribble.svg');
+				content: var(--bg);
 				@apply absolute inset-x-0 bottom-0 pointer-events-none -z-10;
 			}
 		}

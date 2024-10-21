@@ -3,6 +3,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 	style="display: inline; vertical-align: -0.7em; height: 1.3em;"
+	aria-label="[title]"
 	{...$$props}
 >
 	<title>pen</title>
