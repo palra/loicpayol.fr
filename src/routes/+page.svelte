@@ -35,7 +35,10 @@
 				<EmpoweringPeople class="w-3/4 mx-auto -mt-16" />
 			</div>
 		</div>
-		<div class="flex self-center md:self-end md:text-right flex-col gap-1 md:gap-3">
+		<div
+			class="flex self-center md:self-end md:text-right flex-col gap-1 md:gap-3 relative name"
+			style="--bg: url('{Scribble}')"
+		>
 			<h1 class="text-6xl md:text-7xl lg:text-8xl font-bold">Loïc Payol</h1>
 			<div class="text-2xl lg:text-3xl font-normal">Web & Blockchain Engineer</div>
 		</div>
@@ -181,5 +184,10 @@
 		> p {
 			@apply text-lg;
 		}
+	}
+
+	.name::after {
+		content: var(--bg);
+		@apply absolute inset-0 pointer-events-none -z-10;
 	}
 </style>
