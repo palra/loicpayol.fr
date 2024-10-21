@@ -134,6 +134,7 @@
 				href="https://www.linkedin.com/in/loic-payol/"
 				class="hover:text-swiss-coffee-300 hover:-rotate-3 hover:scale-110 transition-all relative"
 				aria-label="Loïc Payol's LinkedIn profile"
+				data-umami-event="social.linkedin"
 			>
 				<FaLinkedin />
 			</a>
@@ -141,6 +142,7 @@
 				href="https://github.com/palra"
 				class="hover:text-swiss-coffee-300 hover:-rotate-3 hover:scale-110 transition-all"
 				aria-label="Loïc Payol's GitHub profile"
+				data-umami-event="social.github"
 			>
 				<FaGithub />
 			</a>
@@ -148,6 +150,7 @@
 				href="https://t.me/LoicPayol"
 				class="hover:text-swiss-coffee-300 hover:-rotate-3 hover:scale-110 transition-all"
 				aria-label="Loïc Payol's Telegram profile"
+				data-umami-event="social.telegram"
 			>
 				<FaTelegram />
 			</a>
