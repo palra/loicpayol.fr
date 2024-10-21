@@ -1,17 +1,24 @@
 <script>
 	import HeadlineFull from '$lib/svg-text/headline-full.svelte';
-	import Pen from '$lib/svg-text/pen.svelte';
-	import Paper from '$lib/svg-text/paper.svelte';
-	import LetsGetInTouch from '$lib/svg-text/lets-get-in-touch.svelte';
 
-	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
-	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
-	import FaTelegram from 'svelte-icons/fa/FaTelegram.svelte';
 	import TransformativeTechnologies from '$lib/svg-text/transformative-technologies.svelte';
 	import EmpoweringPeople from '$lib/svg-text/empowering-people.svelte';
 
 	import Background from '$lib/assets/background.svg';
+
+	import Pen from '$lib/svg-text/pen.svelte';
+	import Paper from '$lib/svg-text/paper.svelte';
+
 	import Scribble from '$lib/assets/scribble.svg';
+
+	import LetsGetInTouch from '$lib/svg-text/lets-get-in-touch.svelte';
+
+	// @ts-expect-error Missing but not useful types for `svelte-icons`
+	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
+	// @ts-expect-error Missing but not useful types for `svelte-icons`
+	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
+	// @ts-expect-error Missing but not useful types for `svelte-icons`
+	import FaTelegram from 'svelte-icons/fa/FaTelegram.svelte';
 </script>
 
 <div
