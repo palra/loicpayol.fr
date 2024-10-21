@@ -173,7 +173,8 @@
 		@apply md:max-w-96 shrink grow basis-80 lg:basis-60;
 
 		& > h3 {
-			@apply text-3xl md:text-4xl w-4/5 mx-auto pb-8 relative max-w-60 md:max-w-72;
+			@apply text-3xl md:text-4xl w-4/5 mx-auto relative max-w-60 md:max-w-72;
+			padding-bottom: 0.95em;
 
 			&::after {
 				content: var(--bg);
