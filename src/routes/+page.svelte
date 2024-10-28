@@ -99,7 +99,7 @@
 				</p>
 			</div>
 			<div class="flex flex-col gap-2 lg:mt-16 service">
-				<h3>Strategy & Management</h3>
+				<h3>Strategy & Leadership</h3>
 				<p>
 					I help companies <strong>bridging technical and business domains</strong>, facilitating
 					clear communication across diverse teams. My experience encompasses
